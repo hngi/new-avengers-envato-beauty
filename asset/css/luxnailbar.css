@@ -65,14 +65,14 @@ li {
     border-radius: .25rem;
 }
 
+.hero .main-header{
+    background-color: var(--primary-color);
+} 
+
 .hero .main-header li {
     padding-right: 1.2rem;
     font-size: 1.1rem;
 }
-
-.hero .main-header{
-    background-color: var(--primary-color);
-} 
 
 .hero .main-header h1 {
     font-family: "Open Sans";
@@ -81,7 +81,7 @@ li {
     font-size: 32px;
     line-height: 44px;
     text-align: center;
-    color: #000000;
+    color: var(--dark);
 }
 
 .hero .hero-pic {
