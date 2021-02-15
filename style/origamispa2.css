@@ -1,0 +1,454 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+html { 
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Belleza', sans-serif;
+}
+
+
+/*----------------------Custom Scrollbar-------------------*/
+
+
+body::-webkit-scrollbar {
+    width: 6px;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+    background: #01707100;  
+        /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(1, 112, 113, 0.48);    /* color of the scroll thumb */
+    border-radius:50%;           /* roundness of the scroll thumb */
+    margin-right:1px;     
+}
+
+.navbar-brand, title {
+    letter-spacing: 3px;
+}
+
+.navbar-main {
+    background: #017071;
+    border-bottom: none;
+}
+
+.navbar-main a {
+    color: #fff;
+    margin-bottom: 0rem;
+    margin: 5px 0px;
+}
+
+.navbar-main a:hover {
+    color: #b6feff;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar-toggler {
+    padding: .25rem .45rem;
+    border: 2px solid;
+    border-radius: 0rem;
+    border-color: rgba(255, 255, 255, 0.2);
+
+}
+
+
+.top-background-image {
+    background-image: url(../img/splash.jpg);
+    background-repeat: repeat-y;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 400px;
+    margin-bottom: 4rem;
+}
+
+.shade {
+    background-image: url(../img/shade.png);
+    background-repeat: repeat-y;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 400px;
+    margin-bottom: 4rem;
+}
+
+.about-us-section {
+    background: rgba(1, 112, 113, 0.05);
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+
+}
+
+.about-us img {
+    height: 100%;
+    width: 70%;
+}
+
+.about-us {
+}
+
+.about-us-description {
+    max-width: 350px;
+}
+
+.services-section {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+
+}
+
+.services img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    padding:10px;
+    border: 2px solid #FF8870;
+}
+
+.our-service1 {
+    height: 112px;
+    width: 100px;
+}
+
+/* On screens that are 600px or less */
+@media screen and (max-width: 600px) {
+    .services img {
+      width: 100%;
+    }
+
+    p.card-title{
+        font-size:11px;
+    }
+
+.spa .col-3 {
+    padding: 5px;
+}
+  }
+
+.services-icons {
+    margin-left: 10px;
+    margin-right: 10px; 
+}
+
+.card-body {
+    padding: .3rem;
+}
+
+.card-title {
+    margin-bottom: 0rem;
+}
+
+.card {
+    border: 0px;
+}
+
+.our-products {
+}
+
+.our-products-description {
+    margin-bottom: 4rem;
+}
+
+.product-section {
+    background: rgba(1, 112, 113, 0.05);
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+
+}
+
+.product-icons {
+    padding: .8rem;
+}
+
+.product-icons img {
+    /*margin-bottom: 2rem;*/
+    width: 100px;
+    text-align: center!important;
+}
+
+.blog-section {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+
+}
+
+.blog-section .card-title {
+    text-align: center;
+        font-weight: 600;
+        font-size: 15px;
+}
+
+
+
+
+.blog-title {
+    position: relative
+}
+.section-title p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+.section-title h4 {
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 20px;
+    display: inline-block
+}
+.section-title h4:before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 2px;
+    background-color: #d8d8d8;
+    bottom: 0;
+    left: 50%;
+    margin-left: -40px;
+}
+.section-title h1:after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #017071;
+    left: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -25px;
+}
+
+.single-blog {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    padding: 30px 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16)
+}
+.single-blog:before {
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #017071;
+    left: 0;
+    top: 0;
+    content: "";
+    -webkit-transition: .3s;
+    transition: .3s
+}
+.single-blog:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #017071;
+    right: 0;
+    bottom: 0;
+    content: "";
+    -webkit-transition: .3s;
+    transition: .3s
+}
+.single-blog:hover:after,
+.single-blog:hover:before {
+    width: 50%;
+    height: 2px;
+    -webkit-transition: .3s;
+    transition: .3s
+}
+.single-blog:hover {
+    box-shadow: 1px 3px 10px 0 rgba(0, 0, 0, 0.10)
+}
+.single-blog i.fa {
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ddd;
+    line-height: 60px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    -webkit-transition: .3s;
+    transition: .3s
+}
+.single-blog:hover i.fa {
+    background-color: #017071b3;
+    color: #fff;
+    border-color: #017071b3;
+    border-radius: 0;
+}
+.single-blog h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.single-blog p {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Show 4th slide on md if col-md-4*/
+    .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    /* Show 3rd slide on sm if col-sm-6*/
+    .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -50%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+
+@media (min-width: 576px) {
+    
+    .carousel-item {
+        margin-right: 0;
+    }
+    
+    /* show 2 items */
+    .carousel-inner .active + .carousel-item {
+        display: block;
+    }
+    
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+        transition: none;
+    }
+    
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    
+    /* farthest right hidden item must be also positioned for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+    
+}
+/* MD */
+@media (min-width: 768px) {
+    
+    /* show 3rd of 3 item slide */
+    .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
+    
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    
+    /* right or prev direction */
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+    
+}
+/* LG */
+@media (min-width: 991px) {
+    
+    /* show 4th item */
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+        display: block;
+    }
+    
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    
+    /* Show 5th slide on lg if col-lg-3 */
+    .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    
+    /* right or prev direction //t - previous slide direction last item animation fix */
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+    
+}
+
