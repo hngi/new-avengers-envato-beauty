@@ -1,0 +1,13 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Scroll down">
+<g id="toggle-left" clip-path="url(#clip0)">
+<path id="Vector" d="M8.15796 13.0527L8.15796 26.1053C8.15796 32.413 13.2713 37.5264 19.579 37.5264C25.8867 37.5264 31.0001 32.413 31.0001 26.1053L31.0001 13.0527C31.0001 6.74501 25.8867 1.63163 19.579 1.63163C13.2713 1.63163 8.15796 6.74501 8.15796 13.0527Z" stroke="#304A39" stroke-width="3.26316" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M24.4736 26.1053C24.4736 23.402 22.2821 21.2106 19.5788 21.2106C16.8755 21.2106 14.6841 23.402 14.6841 26.1053C14.6841 28.8086 16.8755 31.0001 19.5788 31.0001C22.2821 31.0001 24.4736 28.8086 24.4736 26.1053Z" stroke="#304A39" stroke-width="3.26316" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="39.1579" height="39.1579" fill="white" transform="translate(0 39.158) rotate(-90)"/>
+</clipPath>
+</defs>
+</svg>

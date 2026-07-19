@@ -1,0 +1,763 @@
+:root {
+    --light-black: #304A39;
+    --deep-black: #1A281F;
+    --deep-red: #EE4266;
+    --yellow: #FFD23F;
+    --light-green: #A7E8BD;
+    --white: #FFFFFF;
+    --light-white: #F2F2F2;
+    --card-shadow: 0px 19.294px 38.588px rgba(0, 0, 0, 0.25);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 48px !important;
+}
+
+h2 {
+    font-size: 36px !important;
+}
+
+h3 {
+    font-size: 24px !important;
+}
+
+p {
+    font-size: 20px !important;
+}
+
+header {
+    height: 764px;
+    width: 100%;
+    position: relative;
+    background-image: url('../images/Group.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    overflow: hidden;
+}
+
+.bg-color {
+    background-color: var(--deep-black);
+}
+
+.active {
+    border-bottom: 4px solid var(--light-green);
+}
+
+.margin-r-1 {
+    margin-right: 120px;
+}
+
+.margin-l-1 {
+    margin-left: 120px;
+}
+
+.margin-2 {
+    margin-top: 126px;
+    margin-left: 216px;
+    padding-right: 100px;
+}
+
+.grid-box-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.margin-2 h1 {
+    overflow-y: hidden;
+    font-style: normal;
+    line-height: 60px;
+    font-weight: 800;
+}
+
+.margin-2 p {
+    line-height: 27px;
+}
+
+.margin-2 div {
+    padding-right: 10px;
+}
+
+.mt-6 {
+    margin-top: 78px;
+}
+
+.text-l-white {
+    color: #F2F2F2;
+}
+
+.yellow-btn {
+    background-color: var(--yellow);
+    color: var(--deep-black);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 8px;
+    font-weight: 600;
+}
+
+.yellow-btn:hover {
+    text-decoration: none;
+    color: var(--deep-red);
+}
+
+.trans-btn {
+    padding: 10px;
+    font-weight: 600;
+    color: var(--light-white);
+}
+
+.trans-btn:hover {
+    text-decoration: none;
+    color: var(--light-green);
+}
+
+.svg-white {
+    fill: var(--white);
+    position: relative;
+    z-index: 3;
+}
+
+/* main content */
+main .ros {
+    background-color: var(--light-white);
+}
+
+.ros div {
+    margin-left: 222px;
+    padding-top: 115px;
+    padding-bottom: 151px;
+}
+
+.ros div h2,
+.ros div h3 {
+    color: var(--deep-red);
+    font-style: normal;
+    font-weight: 600;
+}
+
+.ros div p {
+    color: var(--deep-black);
+    font-weight: normal;
+}
+
+.ros .img-shape {
+    margin-top: 115px;
+    width: 258px;
+    height: 249px;
+    border: 5px solid #304A39;
+    box-sizing: border-box;
+    border-radius: 20px;
+    transform: rotate(-45deg);
+}
+
+.ros .img-shape img {
+    width: 260px;
+    height: 270px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    position: absolute;
+    top: -10%;
+    right: 10%;
+}
+
+/* section with services */
+.margin-3 {
+    margin-left: 122px;
+    margin-right: 122px;
+    padding-top: 71px;
+    padding-bottom: 151px;
+}
+
+.grid-box-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 55px 15px;
+}
+
+.text-red {
+    color: var(--deep-red);
+}
+
+.text-black {
+    color: var(--deep-black);
+}
+
+.text-yellow {
+    color: var(--yellow);
+}
+.border-sm {
+    border: 6px solid #C4C4C4;
+    box-sizing: border-box;
+    width: 285px;
+    vertical-align: middle;
+}
+
+.border-lg {
+    border: 6px solid var(--light-green);
+    box-sizing: border-box;
+    width: 350px;
+}
+
+.px-6 {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.p-b {
+    padding-bottom: 172px;
+}
+
+/* section with professionals */
+.bg-l-white {
+    background-color: var(--light-white);
+}
+
+.margin-4 {
+    margin-left: 20px;
+    padding-top: 35px;
+    padding-bottom: 83px;
+}
+
+.ml-7 {
+    margin-left: 200px;
+}
+
+.img-sm {
+    width: 280px;
+    height: 308px;
+    border-radius: 4px;
+}
+
+.img-lg {
+    width: 400px;
+    height: 480px;
+    border-radius: 4px;
+}
+
+.pr-6 {
+    padding-right: 105px;
+}
+
+/* section collaborations and contact us */
+.margin-5 {
+    margin-left: 200px;
+    margin-right: 122px;
+    padding-top: 71px;
+    padding-bottom: 66px;
+}
+
+.grid-box-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-content: center;
+}
+
+.mt-7 {
+    margin-top: 100px;
+}
+
+.mr-6 {
+    margin-right: 5.5rem;
+}
+
+input[type="text"] {
+    border: 2px solid #F2F2F2;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #C4C4C4;
+    text-transform: capitalize;
+    width: 285px;
+}
+
+textarea {
+    width: 590px;
+    border: 2px solid #F2F2F2;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #C4C4C4;
+    text-transform: capitalize;
+    background-image: url('../images/pull.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+/* footer */
+footer {
+    background-image: url('../images/footer-img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+}
+
+.subscribe-btn {
+    background-color: var(--yellow) !important;
+    color: var(--deep-black) !important;
+    border: var(--yellow) !important;
+    font-weight: 600 !important;
+}
+
+
+/* small screen */
+@media (max-width: 426px) {
+    h1 {
+        font-size: 20px !important;
+    }
+
+    h2 {
+        font-size: 18px !important;
+    }
+
+    h3 {
+        font-size: 15px !important;
+    }
+
+    p {
+        font-size: 12px !important;
+    }
+
+    a {
+        font-size: 10px !important;
+    }
+
+    header {
+        height: 500px;
+        width: 100%;
+        position: relative;
+        background-image: url('../images/Group.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        overflow: hidden;
+    }
+
+    .nav-link {
+        display: inline-block !important;
+    }
+
+    .margin-l-1 {
+        margin-left: 31px;
+    }
+
+    .margin-r-1 {
+        margin: 30px;
+    }
+
+    .margin-2 {
+        margin-left: 56px;
+        margin-top: 20px;
+        padding-right: 10px;
+    }
+
+    .margin-2 h1 {
+        line-height: 17px;
+    }
+
+    .margin-2 p {
+        line-height: 12px;
+    }
+
+    .margin-2 div {
+        padding-right: 120px;
+    }
+
+    .btn-md.trans-btn {
+        margin-right: -120px;
+        margin-left: 19px;
+    }
+
+    .pr-sm {
+        padding-right: 10px;
+    }
+
+    .mt-6 {
+        margin-top: 35px;
+    }
+
+    /* ros */
+    .grid-box-1 {
+        display: inline-grid;
+    }
+
+    .ros div {
+        margin-left: 30px;
+        padding-top: 35px;
+        padding-bottom: 20px;
+    }
+
+    .ros div h2, .ros div h3 {
+        text-align: center;
+    }
+
+    .ros .img-shape {
+        width: 44px;
+        height: 42px;
+        border: 1px solid #304A39;
+        border-radius: 3px;
+    }
+
+    .ros .img-shape img {
+        width: 44px;
+        height: 56px;
+        border-radius: 3px;
+    }
+
+    .center-text {
+        text-align: center;
+    }
+
+    /* our amazing services */
+    .margin-3 {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 67px;
+    }
+
+    .border-sm {
+        width: 163px;
+    }
+
+    .mt-sm {
+        margin-top: 55px;
+    }
+
+    .border-lg {
+        width: 250px;
+    }
+
+    /* meet our professionals */
+    .margin-4 {
+        margin-left: 10px;
+    }
+
+    .ml-7 {
+        margin-left: 30px;
+    }
+
+    .img-sm {
+        width: 200px;
+        height: 253px;
+        border-radius: 4px;
+    }
+    
+    .img-lg {
+        width: 220px;
+        height: 276px;
+        border-radius: 4px;
+    }
+
+    .pr-6 {
+        padding-right: 10px;
+    }
+
+
+    /* collaborations and contact us */
+    .margin-5 {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .img-size {
+        width: 77px;
+    }
+
+    .img-size-2 {
+        width: 30px;
+        margin-top: 20px;
+    }
+
+    .mr-6 {
+        margin-right: 1.5rem;
+    }
+
+    textarea {
+        width: 285px;
+    }
+}
+
+@media (max-width: 769px) and (min-width: 426px) {
+    h1 {
+        font-size: 25px !important;
+    }
+
+    h2 {
+        font-size: 20px !important;
+    }
+
+    h3 {
+        font-size: 18px !important;
+    }
+
+    p {
+        font-size: 15px !important;
+    }
+
+    a {
+        font-size: 11px !important;
+    }
+
+    header {
+        height: 570px;
+        position: relative;
+        background-size: contain;
+        background-position: right;
+        overflow: hidden;
+    }
+
+    .nav-link {
+        display: inline-block !important;
+    }
+
+    .margin-l-1 {
+        margin-left: 31px;
+    }
+
+    .margin-r-1 {
+        margin: 30px;
+    }
+
+    .margin-2 {
+        margin-left: 56px;
+        margin-top: 20px;
+        padding-right: 10px;
+    }
+
+    .margin-2 h1 {
+        line-height: 30px;
+    }
+
+    .margin-2 p {
+        line-height: 18px;
+    }
+
+    .pr-sm {
+        padding-right: 0px;
+    }
+
+    .mt-6 {
+        margin-top: 35px;
+    }
+
+    .btn-md.trans-btn {
+        margin-right: -120px;
+        margin-left: 19px;
+    }
+
+    /* ros */
+
+    .ros div {
+        margin-left: 30px;
+        padding-top: 35px;
+        padding-bottom: 20px;
+    }
+
+    .ros div h2, .ros div h3 {
+        text-align: center;
+    }
+
+    .ros .img-shape {
+        width: 44px;
+        height: 42px;
+        border: 1px solid #304A39;
+        border-radius: 3px;
+    }
+
+    .ros .img-shape img {
+        width: 44px;
+        height: 56px;
+        border-radius: 3px;
+    }
+
+    .center-text {
+        text-align: center;
+    }
+
+    /* our amazing services */
+    .margin-3 {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 30px;
+        padding-bottom: 67px;
+    }
+
+    .border-sm {
+        width: 210px;
+    }
+
+    .mt-sm {
+        margin-top: 55px;
+    }
+
+    .border-lg {
+        width: 270px;
+    }
+
+    /* meet our professionals */
+    .margin-4 {
+        margin-left: 10px;
+    }
+
+    .ml-7 {
+        margin-left: 30px;
+    }
+
+    .img-sm {
+        width: 280px;
+        height: 253px;
+        border-radius: 4px;
+    }
+    
+    .img-lg {
+        width: 320px;
+        height: 276px;
+        border-radius: 4px;
+    }
+
+    .pr-6 {
+        padding-right: 10px;
+    }
+
+
+    /* collaborations and contact us */
+    .margin-5 {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .img-size {
+        width: 100px;
+    }
+
+    .img-size-2 {
+        width: 50px;
+        margin-top: 20px;
+    }
+
+    .mr-6 {
+        margin-right: 1.5rem;
+    }
+
+    textarea {
+        width: 80%;
+    }
+}
+
+@media (max-width: 910px) and (min-width: 769px) {
+    /* header */
+    header {
+        overflow: hidden;
+    }
+
+    .margin-l-1 {
+        margin-left: 60px;
+    }
+
+    .margin-r-1 {
+        margin-right: 60px;
+    }
+
+    .margin-2 {
+        margin-top: 80px;
+        margin-left: 80px;
+        padding-right: 20px;
+    }
+
+    .btn-md.trans-btn {
+        margin-right: -80px;
+        margin-left: 19px;
+    }
+
+    /* ros */
+    .ros div {
+        margin-left: 100px;
+    }
+
+    .ros .img-shape {
+        width: 150px;
+        height: 60px;
+        border: 1px solid #304A39;
+        border-radius: 3px;
+    }
+
+    .ros .img-shape img {
+        width: 170px;
+        height: 270px;
+        border-radius: 3px;
+    }
+
+    /* amazing services */
+    .margin-3 {
+        margin-left: 100px;
+    }
+
+    /* collaborations and contact us */
+    .margin-5 {
+        margin-left: 70px;
+    }
+
+    input[type='text'] {
+        width: 188px;
+    }
+
+    textarea {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 911px) {
+
+    /* header */
+    .btn-md.trans-btn {
+        margin-right: -35px;
+        margin-left: 19px;
+    }
+
+    .margin-2 {
+        margin-left: 85px;
+    }
+
+    /* ros */
+    .ros div {
+        margin-left: 130px;
+    }
+
+    /* amazing services */
+    .mt-sm {
+        margin-top: 0px;
+    }
+
+    /* meet our professionals */
+    .pr-6 {
+        padding-right: 80px;
+    }
+
+    /* collaborations and contact us */
+    .margin-5 {
+        margin-left: 30px;
+    }
+
+    input[type='text'] {
+        width: 240px;
+    }
+
+    textarea {
+        width: 500px;
+    }
+}
+
+@media (min-width: 768px) {
+    .h-m-25 {
+        height: 25%;
+    }
+}
